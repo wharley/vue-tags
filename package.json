@@ -1,12 +1,24 @@
 {
   "name": "vue-tags",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Describes my component",
+  "author": {
+    "name": "Wharley Ornelas",
+    "email": "wharleyornelasjs@gmail.com"
+  },
+  "repository": "https://github.com/wharley/vue-tags",
+  "bugs": "https://github.com/wharley/vue-tags/issues",
+  "license": "MIT",
+  "files": ["dist"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:npm": "vue-cli-service build --target lib --name vue-tags src/components/VueTags.vue"
   },
+  "main": "dist/vue-tags.umd.js",
+  "unpkg": "dist/vue-tags.umd.min.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "sass": "^1.22.12",
