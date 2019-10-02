@@ -1,6 +1,6 @@
 {
   "name": "vue-tags-custom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Describes my component",
   "author": {
@@ -10,7 +10,9 @@
   "repository": "https://github.com/wharley/vue-tags",
   "bugs": "https://github.com/wharley/vue-tags/issues",
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
