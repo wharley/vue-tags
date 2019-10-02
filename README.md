@@ -1,4 +1,4 @@
-# vue-tags
+# vue-tags-custom
 
 ![Screenshot of Vue Tags](src/assets/vue-tags.gif)
 
@@ -43,7 +43,6 @@ export default {
   },
   data() {
     return {
-      tag: '',
       tagList: [
         'Georgia',
         'Germany',
