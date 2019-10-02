@@ -34,7 +34,7 @@ Here's a sample implementation that initializes the component with a list of ini
 
 ```javascript
 <script>
-import VueTags from 'vue-tags'
+import VueTags from 'vue-tags-custom'
 
 export default {
   name: 'app',
