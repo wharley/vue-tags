@@ -21,6 +21,9 @@
   },
   "main": "dist/vue-tags-custom.umd.js",
   "unpkg": "dist/vue-tags-custom.umd.min.js",
+  "browser": {
+    "./sfc": "src/components/VueTags.vue"
+  },
   "dependencies": {
     "core-js": "^2.6.5",
     "sass": "^1.22.12",

@@ -7,7 +7,13 @@ A fantastically simple tagging component for your Vue projects
 ### Installation
 
 ```
-npm install --save vue-tags
+npm install --save vue-tags-custom
+```
+
+Or
+
+```
+yarn add vue-tags-custom
 ```
 
 ### Usage
