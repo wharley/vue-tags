@@ -10,22 +10,26 @@
   "repository": "https://github.com/wharley/vue-tags",
   "bugs": "https://github.com/wharley/vue-tags/issues",
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build:npm": "vue-cli-service build --target lib --name vue-tags-custom src/components/VueTags.vue"
-  },
   "main": "dist/vue-tags-custom.umd.js",
   "unpkg": "dist/vue-tags-custom.umd.min.js",
+  "module": "dist/my-component.esm.js",
   "browser": {
     "./sfc": "src/components/VueTags.vue"
   },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build:umd && npm run build:es && npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-tags-custom.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-tags-custom.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-tags-custom.min.js",
+    "lint": "vue-cli-service lint"
+  },
   "dependencies": {
     "core-js": "^2.6.5",
+    "rollup": "^1.22.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-vue": "^5.0.1",
     "sass": "^1.22.12",
     "sass-loader": "^8.0.0",
     "vue": "^2.6.10"
