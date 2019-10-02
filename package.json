@@ -1,5 +1,5 @@
 {
-  "name": "vue-tags",
+  "name": "vue-tags-custom",
   "version": "0.1.0",
   "private": false,
   "description": "Describes my component",
@@ -15,10 +15,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:npm": "vue-cli-service build --target lib --name vue-tags src/components/VueTags.vue"
+    "build:npm": "vue-cli-service build --target lib --name vue-tags-custom src/components/VueTags.vue"
   },
-  "main": "dist/vue-tags.umd.js",
-  "unpkg": "dist/vue-tags.umd.min.js",
+  "main": "dist/vue-tags-custom.umd.js",
+  "unpkg": "dist/vue-tags-custom.umd.min.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "sass": "^1.22.12",
