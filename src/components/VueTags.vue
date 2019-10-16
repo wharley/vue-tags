@@ -91,11 +91,16 @@ export default {
   display: inline-block;
 
   > input {
+    outline: none;
     width: 192px;
     height: 25px;
-    border: solid 2px #E8E8E8;
 
+    border: solid 2px #E8E8E8;
     border-radius: 9px;
+
+    &:focus {
+      border-bottom: 2px solid #26a69a;
+    }
   }
 }
 
@@ -104,6 +109,7 @@ export default {
   padding: 0;
   width: 200px;
 
+  border-radius: 9px;
   box-shadow: .05em .01em .5em rgba(0,0,0,.2);
   background: white;
   list-style-type: none;
